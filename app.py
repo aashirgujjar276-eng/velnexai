@@ -297,6 +297,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
 # ---------------------------------------------------------------------------
 # CHAT HISTORY
 # ---------------------------------------------------------------------------
@@ -316,6 +317,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
 # ---------------------------------------------------------------------------
 # QUICK-REPLY SUGGESTIONS (shown only before the first message)
 # ---------------------------------------------------------------------------
@@ -353,7 +355,7 @@ if user_input:
     with st.chat_message("user", avatar="🧑"):
         st.markdown(user_input)
 
-  with st.chat_message("assistant", avatar="velnex_logo.png"):
+    with st.chat_message("assistant", avatar="velnex_logo.png"):
         api_messages = [
             {"role": m["role"], "content": m["content"]}
             for m in st.session_state.messages
