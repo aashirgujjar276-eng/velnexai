@@ -353,13 +353,13 @@ if user_input:
     with st.chat_message("user", avatar="🧑"):
         st.markdown(user_input)
 
-   with st.chat_message("assistant", avatar="velnex_logo.png"):
+  with st.chat_message("assistant", avatar="velnex_logo.png"):
         api_messages = [
             {"role": m["role"], "content": m["content"]}
             for m in st.session_state.messages
         ]
 
-   placeholder = st.empty()
+        placeholder = st.empty()
         full_text = ""
         visible_so_far = ""
         stream_failed = False
@@ -387,7 +387,7 @@ if user_input:
             placeholder.markdown(visible_so_far)
             full_text = visible_so_far
 
-       reply = full_text
+        reply = full_text
         lead = parse_lead(reply) if not stream_failed else None
         display_reply = visible_so_far
 
