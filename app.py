@@ -304,8 +304,8 @@ st.markdown(
         justify-content: center;
         gap: 14px;
     }
-    .velnex-title {
-        color: white;
+    .velnex-hero h1.velnex-title {
+        color: #ffffff !important;
         font-size: 2.4rem;
         font-weight: 800;
         margin: 0;
